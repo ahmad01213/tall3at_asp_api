@@ -15,7 +15,6 @@ namespace Donia.Models
         public DateTime Date { get; set; }
         public string ModleId { get; set; }
         public string UserId { get; set; }
-
         public Notif()
         {
             Date = DateTime.Now;

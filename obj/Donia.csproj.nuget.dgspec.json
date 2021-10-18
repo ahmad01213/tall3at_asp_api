@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/iSlahul/eSar/projects/asp/Tall3at/Donia.csproj": {}
+    "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/Donia.csproj": {}
   },
   "projects": {
-    "/Volumes/iSlahul/eSar/projects/asp/Tall3at/Donia.csproj": {
+    "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/Donia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/iSlahul/eSar/projects/asp/Tall3at/Donia.csproj",
+        "projectUniqueName": "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/Donia.csproj",
         "projectName": "Donia",
-        "projectPath": "/Volumes/iSlahul/eSar/projects/asp/Tall3at/Donia.csproj",
+        "projectPath": "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/Donia.csproj",
         "packagesPath": "/Users/islahul/.nuget/packages/",
-        "outputPath": "/Volumes/iSlahul/eSar/projects/asp/Tall3at/obj/",
+        "outputPath": "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/islahul/.config/NuGet/NuGet.Config"
+          "/Users/islahul/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -46,6 +46,14 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -60,9 +68,17 @@
               "target": "Package",
               "version": "[5.0.7, )"
             },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.0-beta.1, )"
+            },
+            "Z.EntityFramework.Extensions.EFCore": {
+              "target": "Package",
+              "version": "[3.2.10, )"
             }
           },
           "imports": [

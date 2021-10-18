@@ -106,3 +106,187 @@
 /Volumes/iSlahul/eSar/projects/asp/Tall3at/obj/Debug/netcoreapp3.1/Donia.dll
 /Volumes/iSlahul/eSar/projects/asp/Tall3at/obj/Debug/netcoreapp3.1/Donia.pdb
 /Volumes/iSlahul/eSar/projects/asp/Tall3at/obj/Debug/netcoreapp3.1/Donia.genruntimeconfig.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/appsettings.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia.deps.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.dev.json
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Donia.pdb
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Humanizer.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.csprojAssemblyReference.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfoInputs.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfo.cs
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CoreCompileInputs.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.MvcApplicationPartsAssemblyInfo.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.RazorTargetAssemblyInfo.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CopyComplete
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.Manifest.cache
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.xml
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.dll
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.pdb
+/media/ahmad/New Volume/Projects/tall3at_asp_api/obj/Debug/netcoreapp3.1/Donia.genruntimeconfig.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.AssemblyReference.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.GeneratedMSBuildEditorConfig.editorconfig
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfoInputs.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfo.cs
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CoreCompileInputs.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.MvcApplicationPartsAssemblyInfo.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.pdb
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/appsettings.Development.json
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/appsettings.json
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.exe
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.deps.json
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.json
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.dev.json
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.pdb
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Humanizer.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.Manifest.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.xml
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/scopedcss/bundle/Donia.styles.css
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.RazorTargetAssemblyInfo.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CopyComplete
+E:/Projects/Matbakh24/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.genruntimeconfig.cache
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/EntityFramework.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNet.Identity.Core.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNet.Identity.EntityFramework.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Z.EntityFramework.Extensions.EFCore.dll
+E:/Projects/Matbakh24/matbakh24_asp_api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/appsettings.json
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.deps.json
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.json
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.runtimeconfig.dev.json
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Donia.pdb
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/EntityFramework.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Humanizer.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNet.Identity.Core.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNet.Identity.EntityFramework.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/Z.EntityFramework.Extensions.EFCore.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csprojAssemblyReference.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfoInputs.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.AssemblyInfo.cs
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CoreCompileInputs.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.Manifest.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/staticwebassets/Donia.StaticWebAssets.xml
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/scopedcss/bundle/Donia.styles.css
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.RazorTargetAssemblyInfo.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.csproj.CopyComplete
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.pdb
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/Debug/netcoreapp3.1/Donia.genruntimeconfig.cache
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/MailKit.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/MimeKit.dll
+/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll

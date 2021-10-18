@@ -9,10 +9,13 @@ namespace Donia.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<UserForRegister, User>();
-            CreateMap<AddNewAdRequest, Ad>();
-            CreateMap<TripAdd, Trib>();
-            CreateMap<Trib, UserTripResponse>();
-            CreateMap<AddService,Service >();
+            CreateMap<MarketForAddDto, Market>();
+            CreateMap<FoodForAdd, Food>();
+
+            CreateMap<User, UserDetailResponse>();
+            CreateMap<DriverForRegister, User>();
+            CreateMap<DriverForRegister, Driver>();
+
         }
     }
 }

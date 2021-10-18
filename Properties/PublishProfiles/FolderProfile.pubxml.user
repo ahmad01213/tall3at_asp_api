@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\Projects\Matbakh24\matbakh24_asp_api\../../../../../../Users/islahul/Desktop/publish</_PublishTargetUrl>
+    <History>True|2021-09-15T03:27:45.5904513Z;True|2021-09-14T20:17:21.7893931-07:00;True|2021-09-14T19:23:58.5669459-07:00;True|2021-09-14T19:23:35.6726285-07:00;True|2021-09-14T19:07:03.3072966-07:00;True|2021-09-14T19:06:48.1711426-07:00;True|2021-09-14T19:02:20.5945434-07:00;True|2021-09-13T14:44:07.0993357-07:00;True|2021-09-13T14:27:09.5064494-07:00;True|2021-09-11T20:20:52.3125097-07:00;True|2021-09-09T15:50:48.5517117-07:00;True|2021-09-09T15:48:32.0811990-07:00;True|2021-09-09T15:40:54.0161253-07:00;True|2021-09-09T15:29:07.8842722-07:00;True|2021-09-09T15:20:34.4849467-07:00;True|2021-09-09T15:14:07.9642864-07:00;True|2021-09-09T15:13:49.2806734-07:00;True|2021-09-09T15:04:44.1126496-07:00;True|2021-09-09T14:58:27.4006208-07:00;True|2021-09-09T14:52:15.9972960-07:00;True|2021-09-09T14:44:11.2367529-07:00;True|2021-09-09T14:13:13.9551839-07:00;</History>
+  </PropertyGroup>
+</Project>

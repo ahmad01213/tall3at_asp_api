@@ -8,6 +8,5 @@ namespace Donia.Dtos
         public Message message { get; set; }
         public User sender { get; set; }
         public User reciever { get; set; }
-        public Service service { get; set; }
     }
 }

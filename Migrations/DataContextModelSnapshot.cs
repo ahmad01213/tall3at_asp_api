@@ -17,17 +17,11 @@ namespace Donia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.7");
 
-            modelBuilder.Entity("Donia.Models.Ad", b =>
+            modelBuilder.Entity("Donia.Models.Address", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    b.Property<string>("category")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("description")
-                        .HasColumnType("longtext");
 
                     b.Property<double>("lat")
                         .HasColumnType("double");
@@ -35,56 +29,58 @@ namespace Donia.Migrations
                     b.Property<double>("lng")
                         .HasColumnType("double");
 
-                    b.Property<string>("phone")
-                        .HasColumnType("longtext");
+                    b.Property<int>("user_id")
+                        .HasColumnType("int");
 
-                    b.Property<string>("subcategory")
-                        .HasColumnType("longtext");
+                    b.HasKey("Id");
 
-                    b.Property<string>("title")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("user_id")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("id");
-
-                    b.ToTable("ads");
+                    b.ToTable("addresses");
                 });
 
-            modelBuilder.Entity("Donia.Models.Booking", b =>
+            modelBuilder.Entity("Donia.Models.Cart", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Notes")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PaymentMethod")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("ServiceId")
+                    b.Property<int>("food_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Sets")
+                    b.Property<int>("order_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Status")
+                    b.Property<int>("price")
                         .HasColumnType("int");
 
-                    b.Property<double>("TotalCost")
-                        .HasColumnType("double");
+                    b.Property<int>("quantity")
+                        .HasColumnType("int");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("longtext");
+                    b.Property<int>("user_id")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("bookings");
+                    b.ToTable("carts");
+                });
+
+            modelBuilder.Entity("Donia.Models.CartGroupOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("cart_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("group_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("option_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CartGroupoptions");
                 });
 
             modelBuilder.Entity("Donia.Models.Category", b =>
@@ -93,14 +89,14 @@ namespace Donia.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Image")
+                    b.Property<int>("field_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<int>("status")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -119,7 +115,10 @@ namespace Donia.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("OrgId")
+                    b.Property<string>("Model")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ModelId")
                         .HasColumnType("longtext");
 
                     b.Property<int>("Rate")
@@ -134,6 +133,207 @@ namespace Donia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("comments");
+                });
+
+            modelBuilder.Entity("Donia.Models.Driver", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("address")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("balance")
+                        .HasColumnType("int");
+
+                    b.Property<string>("device_token")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("image")
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("lat")
+                        .HasColumnType("double");
+
+                    b.Property<double>("lng")
+                        .HasColumnType("double");
+
+                    b.Property<string>("name")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("order_count")
+                        .HasColumnType("int");
+
+                    b.Property<string>("phone")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("rate")
+                        .HasColumnType("int");
+
+                    b.Property<int>("reviews")
+                        .HasColumnType("int");
+
+                    b.Property<string>("role")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("status")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("user_id")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("drivers");
+                });
+
+            modelBuilder.Entity("Donia.Models.DriverOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("driver_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("market_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("order_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("driverOrders");
+                });
+
+            modelBuilder.Entity("Donia.Models.Field", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("fields");
+                });
+
+            modelBuilder.Entity("Donia.Models.FieldMarket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("field_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("market_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("fieldMarkets");
+                });
+
+            modelBuilder.Entity("Donia.Models.Food", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("attatchments")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("category_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("desc")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("market_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("notes")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("persons")
+                        .HasColumnType("int");
+
+                    b.Property<double>("preparation_time")
+                        .HasColumnType("double");
+
+                    b.Property<int>("price")
+                        .HasColumnType("int");
+
+                    b.Property<string>("serve_way")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("foods");
+                });
+
+            modelBuilder.Entity("Donia.Models.Market", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("balance")
+                        .HasColumnType("int");
+
+                    b.Property<string>("bannarImage")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("image")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("isClosed")
+                        .HasColumnType("int");
+
+                    b.Property<double>("lat")
+                        .HasColumnType("double");
+
+                    b.Property<double>("lng")
+                        .HasColumnType("double");
+
+                    b.Property<int>("order_count")
+                        .HasColumnType("int");
+
+                    b.Property<string>("phone")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("rate")
+                        .HasColumnType("int");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("summary")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("title")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("user_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("markets");
                 });
 
             modelBuilder.Entity("Donia.Models.Message", b =>
@@ -192,8 +392,8 @@ namespace Donia.Migrations
                     b.Property<string>("Modle")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("ModleId")
-                        .HasColumnType("int");
+                    b.Property<string>("ModleId")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Title")
                         .HasColumnType("longtext");
@@ -206,9 +406,111 @@ namespace Donia.Migrations
                     b.ToTable("notifs");
                 });
 
+            modelBuilder.Entity("Donia.Models.Option", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("group_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("image")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("name")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("price")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("options");
+                });
+
+            modelBuilder.Entity("Donia.Models.OptionGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("food_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OptionGroups");
+                });
+
+            modelBuilder.Entity("Donia.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("address_id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("delivery_id")
+                        .HasColumnType("int");
+
+                    b.Property<double>("market_distance")
+                        .HasColumnType("double");
+
+                    b.Property<int>("market_id")
+                        .HasColumnType("int");
+
+                    b.Property<double>("market_lat")
+                        .HasColumnType("double");
+
+                    b.Property<double>("market_lng")
+                        .HasColumnType("double");
+
+                    b.Property<int>("market_rate")
+                        .HasColumnType("int");
+
+                    b.Property<string>("marketimage")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("marketname")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("userPhone")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("user_id")
+                        .HasColumnType("int");
+
+                    b.Property<double>("user_lat")
+                        .HasColumnType("double");
+
+                    b.Property<double>("user_lng")
+                        .HasColumnType("double");
+
+                    b.Property<string>("username")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("orders");
+                });
+
             modelBuilder.Entity("Donia.Models.Photo", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
@@ -221,176 +523,23 @@ namespace Donia.Migrations
                     b.Property<string>("Url")
                         .HasColumnType("longtext");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("photos");
                 });
 
-            modelBuilder.Entity("Donia.Models.Service", b =>
+            modelBuilder.Entity("Donia.Models.Slider", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Address")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("City")
-                        .HasColumnType("longtext");
-
-                    b.Property<double>("Cost")
-                        .HasColumnType("double");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Desc")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("Duration")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("EventDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Lnk")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Location")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("MaxBookings")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Meta")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("MinPersons")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Payments")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("UserId")
+                    b.Property<string>("image")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("services");
-                });
-
-            modelBuilder.Entity("Donia.Models.Story", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("VideoUrl")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("stories");
-                });
-
-            modelBuilder.Entity("Donia.Models.Trib", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("address")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("chips")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("date")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("description")
-                        .HasColumnType("longtext");
-
-                    b.Property<double>("lat")
-                        .HasColumnType("double");
-
-                    b.Property<double>("lng")
-                        .HasColumnType("double");
-
-                    b.Property<string>("notes")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("offerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("orgId")
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("persons")
-                        .HasColumnType("int");
-
-                    b.Property<double>("price")
-                        .HasColumnType("double");
-
-                    b.Property<int>("status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("userId")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("id");
-
-                    b.ToTable("trips");
-                });
-
-            modelBuilder.Entity("Donia.Models.Triporg", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("notes")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("orgId")
-                        .HasColumnType("longtext");
-
-                    b.Property<double>("price")
-                        .HasColumnType("double");
-
-                    b.Property<int>("tripId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("triporgs");
+                    b.ToTable("sliders");
                 });
 
             modelBuilder.Entity("Donia.Models.User", b =>
@@ -509,6 +658,32 @@ namespace Donia.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("Donia.Models.UserNotification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("body")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("image")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("title")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("user_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserNotifications");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

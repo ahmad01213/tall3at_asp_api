@@ -13,11 +13,8 @@ namespace Donia.Models
         public string FacebookId { get; set; }
         public DateTime CreatedAt { get; set; }
 
-
-
-
         public string AboutText { get; set; }
-        
+
         public string BanarImage { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
@@ -29,15 +26,14 @@ namespace Donia.Models
         public string code { get; set; }
         public string Role { get; set; }
         public string IbanNumber { get; set; }
+        public double balance { get; set; }
         public string IdentityNumber { get; set; }
-   
-
-
+  
         public User() {
             GoogleId = null;
             FacebookId = null;
            CreatedAt = DateTime.Now;
-
+            balance = 0.0;
         }
     }
 }

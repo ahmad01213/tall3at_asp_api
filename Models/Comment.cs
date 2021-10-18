@@ -12,7 +12,8 @@ namespace Donia.Models
         public string CommentText { get; set; }
         public string UserId { get; set; }
         public string UserName { get; set; }
-        public string OrgId { get; set; }
+        public string Model { get; set; }
+        public string ModelId { get; set; }
         public DateTime CreatedAt { get; set; }
 
         public Comment()
