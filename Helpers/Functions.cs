@@ -49,7 +49,7 @@ class Functions
 
         using (var client = new HttpClient())
         {
-            var firebaseOptionsServerId = "AAAAy2vBM78:APA91bFK6gL93jsWFegHQHotUFz796Ak07hkPjo2teNMrT5C2KFmfuv4ZM9qjE9l1MdT_FChgVYxS0haGLdvyf2LdXm3d3xYeRQb2SSQtsGRM1GWg8NcD5670ahx52gucfak4AWOlYRo";
+            var firebaseOptionsServerId = "AAAAAy2vBM78:APA91bFK6gL93jsWFegHQHotUFz796Ak07hkPjo2teNMrT5C2KFmfuv4ZM9qjE9l1MdT_FChgVYxS0haGLdvyf2LdXm3d3xYeRQb2SSQtsGRM1GWg8NcD5670ahx52gucfak4AWOlYRo";
             var firebaseOptionsSenderId = "873686184895";
 
             client.BaseAddress = new Uri("https://fcm.googleapis.com");
@@ -100,10 +100,38 @@ class Functions
 
     }
 
+
+
     public static async Task<User> getCurrentUser(IHttpContextAccessor _httpContextAccessor, DataContext _context)
     {
         var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
         var user = await _context.Users.FindAsync(userId);
         return user;
+    }
+
+
+
+    private static readonly HttpClient client = new HttpClient();
+
+    public async Task<object> SendSmsAsync(string code, string phone)
+    {
+
+        var values = new Dictionary<string, string>
+{
+    { "user", "MMATBAKH24" },
+    { "pass", "HHassan_ali321@" },
+    { "to", phone },
+    { "message", code },
+    { "sender", "MMATBAKH24" },
+};
+
+        var content = new FormUrlEncodedContent(values);
+
+        var response = await client.PostAsync("https://www.jawalbsms.ws/api.php/sendsms", content);
+
+        var responseString = await response.Content.ReadAsStringAsync();
+
+        return responseString;
+
     }
 }

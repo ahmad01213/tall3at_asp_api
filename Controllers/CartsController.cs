@@ -140,10 +140,10 @@ namespace Donia.Controllers
             dtax = 0.15 * dtotal;
             //dtotal = dtotal + dtax;
 
-            var subtotal = dsubtotal.ToString("#.##");
-            var total = dtotal.ToString("#.##");
-            var tax = dtax.ToString("#.##");
-            var delivery = ddelivery;
+            var subtotal = Math.Round(dsubtotal, 2);
+            var total = Math.Round(dtotal, 2);
+            var tax = Math.Round(dtax, 2);
+            var delivery = Math.Round(ddelivery, 2);
             return Ok(new {
                 cartsResponse,
                 subtotal,

@@ -9,5 +9,6 @@ namespace Donia.Dtos
         public Market market { get; set; }
         public List<Field> fields { get; set; }
         public List<FoodDetailResponse> foods { get; set; }
+        public string dist { get; set; }
     }
 }

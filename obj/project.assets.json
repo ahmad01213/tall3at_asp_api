@@ -7096,7 +7096,7 @@
       "outputPath": "/Volumes/iSlahul/eSar/projects/test_apps/matbakh24_asp_api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/islahul/.nuget/NuGet/NuGet.Config"
+        "/Users/islahul/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

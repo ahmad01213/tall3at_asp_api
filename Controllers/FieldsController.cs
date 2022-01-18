@@ -37,12 +37,10 @@ namespace Donia.Controllers
            var fields =  await myDbContext.fields.AsNoTracking().ToListAsync();
             return Ok(fields);
         }
-
-
-
         [HttpGet("field/markets")]
         public async Task<ActionResult> getMarkets(int fieldId,int addressId)
         {
+            if (addressId == 0|| addressId == null) addressId = 4;
             List<MarketDetailResponse> markets = new List<MarketDetailResponse>();
             Address address = await myDbContext.addresses.Where(x => x.Id == addressId).FirstOrDefaultAsync();
 
@@ -76,7 +74,6 @@ namespace Donia.Controllers
                     {
                         food = food,
                         photos = photos
-
                     };
                     foods.Add(foodDetail);
                 }
@@ -84,7 +81,9 @@ namespace Donia.Controllers
                 {
                     fields = fields,
                     market = market,
-                    foods=foods
+                    foods=foods,
+                    dist = fm.Dist.ToString()
+
                 };
                 markets.Add(marketDetail);
                 }

@@ -23,5 +23,11 @@ namespace Donia.Dtos
         public string Role { get; set; }
         public double balance { get; set; }
 
+        public string identityNumber { get; set; }
+        public string IbanNumber { get; set; }
+        public string ProfileImage { get; set; }
+        public string carImage { get; set; }
+        public string identityImage { get; set; }
+
     }
 }

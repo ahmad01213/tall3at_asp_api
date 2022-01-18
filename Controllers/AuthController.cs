@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,6 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Donia.Controllers
 {
-
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -58,6 +58,8 @@ namespace Donia.Controllers
                 {
                     code = user.code;
                 }
+
+                await Functions.slt.SendSmsAsync(code,user.UserName);
                 return Ok(new
                 {
                     status = 1,
@@ -158,6 +160,33 @@ namespace Donia.Controllers
         }
 
 
+
+        private static readonly HttpClient client = new HttpClient();
+
+        [HttpPost("auth/sms")]
+        public async Task<object> SendSmsAsync()
+        {
+
+            var values = new Dictionary<string, string>
+{
+    { "user", "MATBAKH24" },
+    { "pass", "Hassan_ali321@" },
+    { "to", "+966580016813" },
+    { "message", "12345" },
+    { "sender", "MATBAKH24" },
+};
+
+            var content = new FormUrlEncodedContent(values);
+
+            var response = await client.PostAsync("https://www.jawalbsms.ws/api.php/sendsms", content);
+
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            return responseString;
+
+        }
+
+
         [HttpPost("auth/validate")]
         public async Task<ActionResult> validate([FromForm]UserForValidate userForValidate)
         {
@@ -176,11 +205,6 @@ namespace Donia.Controllers
 
             return Ok("success");
         }
-
-
-
-
-
 
         [HttpPost("/auth/admin-login")]
         public async Task<IActionResult> LoginAdmin([FromForm]string userName, [FromForm] string password)
@@ -227,12 +251,15 @@ namespace Donia.Controllers
         }
 
 
+       
 
-        [HttpPost("/auth/confirm-code")]
+
+
+            [HttpPost("/auth/confirm-code")]
         public async Task<IActionResult> Login([FromForm] UserForLogin model)
         {
             var loginUser = await userManager.FindByNameAsync(model.userName);
-            if (loginUser != null )
+            if (loginUser != null &&loginUser.code==model.code)
             {
                  var userRoles = await userManager.GetRolesAsync(loginUser);
 

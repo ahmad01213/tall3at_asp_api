@@ -33,6 +33,8 @@ namespace Donia.Controllers
         [HttpGet("get-home")]
         public async Task<ActionResult> getHome(int addressId)
         {
+            if (addressId == 0 || addressId == null) addressId = 4;
+
             var fields = await myDbContext.fields.AsNoTracking().ToListAsync();
             Address address = await myDbContext.addresses.Where(x => x.Id == addressId).FirstOrDefaultAsync();
             var myLat = address.lat;
@@ -43,7 +45,7 @@ namespace Donia.Controllers
            .Select(f => new {
                f,
                Dist = distanceInMiles(myLon, myLat, f.lng, f.lat)
-           }).OrderBy(market => market.Dist)
+           }).OrderByDescending(market => market.f.Id)
            .Where(p => p.Dist <= radiusInMile);
 
             List<FoodDetailResponse> foods = new List<FoodDetailResponse>();
@@ -93,7 +95,8 @@ namespace Donia.Controllers
             {
                 market = market,
                 fields=fields,
-                foods = foods
+                foods = foods,
+
             };
             return Ok(marketDetail);
         }
@@ -103,12 +106,11 @@ namespace Donia.Controllers
         {
             var radiusInMile = 50;
             List<MarketDetailResponse> markets = new List<MarketDetailResponse>();
-
-            var mrkts =  myDbContext.markets
+            var mrkts = myDbContext.markets
                .Where(p => p.title.Contains(searRequest.search))
 
                    .AsEnumerable()
-                   .Select(market => new { market, Dist = distanceInMiles(searRequest.lat, searRequest.lng, market.lat, market.lng) }).OrderBy(market => market.Dist).Where(p => p.Dist <= radiusInMile);
+                   .Select(market => new { market, Dist = distanceInMiles(searRequest.lng, searRequest.lat, market.lng, market.lat) }).OrderBy(market => market.Dist);
 
             ;
 
@@ -123,7 +125,7 @@ namespace Donia.Controllers
                     fields.Add(field);
                 }
 
-                var fods = await myDbContext.foods.AsNoTracking().ToListAsync();
+                var fods = await myDbContext.foods.Where(x=>x.market_id==market.market.Id).AsNoTracking().ToListAsync();
                 List<FoodDetailResponse> foods = new List<FoodDetailResponse>();
                 foreach (var food in fods)
                 {
@@ -141,7 +143,8 @@ namespace Donia.Controllers
                 {
                     market = market.market,
                     fields = fields,
-                    foods = foods
+                    foods = foods,
+                    dist = market.Dist.ToString()
                 };
 
                 markets.Add(marketDetail);

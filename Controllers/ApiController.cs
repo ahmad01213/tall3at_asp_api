@@ -65,7 +65,6 @@ namespace Donia.Controllers
 
             IWebHostEnvironment _webHostEnvironment;
                 public ApiController(DataContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor, IWebHostEnvironment webHostEnvironment)
-
                 {
                     myDbContext = context;
                     _mapper = mapper;

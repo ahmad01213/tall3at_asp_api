@@ -18,6 +18,7 @@ namespace Donia.Dtos
         public DbSet<Message> messages { get; set; }
         public DbSet<Notif> notifs { get; set; }
         public DbSet<Photo> photos { get; set; }
+        public DbSet<CreditCard> credit_cards { get; set; }
 
         public DbSet<User> AspNetUsers { get; set; }
 

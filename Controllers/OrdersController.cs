@@ -6,13 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 
-
-
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 namespace Donia.Controllers
@@ -29,9 +23,11 @@ namespace Donia.Controllers
             [Authorize]
             [HttpPost("order/add")]
             public async Task<ActionResult> addOrder([FromForm] Order order)
-            { 
-                List<Cart> carts = await myDbContext.carts.Where(x => x.user_id == order.user_id).Where(x => x.order_id == 0).ToListAsync();
-                await myDbContext.orders.AddAsync(order);
+            {
+            order.payment = 0;
+
+            List<Cart> carts = await myDbContext.carts.Where(x => x.user_id == order.user_id).Where(x => x.order_id == 0).ToListAsync();
+             await myDbContext.orders.AddAsync(order);
             Market market = await myDbContext.markets.Where(x => x.Id == order.market_id).FirstAsync();
             Address address = await myDbContext.addresses.Where(x => x.Id == order.address_id).FirstAsync();
 
@@ -48,9 +44,37 @@ namespace Donia.Controllers
                 carts.ForEach(c => { c.order_id = order.Id; });
             User user = await myDbContext.AspNetUsers.Where(x => x.Id == order.user_id).FirstAsync();
                await myDbContext.SaveChangesAsync();
-         await Functions.slt.SendNotificationAsync(new List<string>() { market.user_id},"مطبخ ٢٤ | Matbakh24","لديكم طلب جديد الرجاء التأكيد والبدء في تجهيز الطلب",myDbContext);
+             await Functions.slt.SendNotificationAsync(new List<string>() { market.user_id},"مطبخ ٢٤ | Matbakh24","لديكم طلب جديد الرجاء التأكيد والبدء في تجهيز الطلب",myDbContext);
                 return Ok(order);
             }
+
+        [Authorize]
+        [HttpPost("order/pay")]
+        public async Task<ActionResult> payOrder([FromForm] Order order)
+        {
+
+            order.payment = order.payment;
+            List<Cart> carts = await myDbContext.carts.Where(x => x.user_id == order.user_id).Where(x => x.order_id == 0).ToListAsync();
+            await myDbContext.orders.AddAsync(order);
+            Market market = await myDbContext.markets.Where(x => x.Id == order.market_id).FirstAsync();
+            Address address = await myDbContext.addresses.Where(x => x.Id == order.address_id).FirstAsync();
+
+            order.market_image = market.image;
+            order.market_name = market.title;
+            order.market_lat = market.lat;
+            order.market_lng = market.lng;
+            order.user_lat = address.lat;
+            order.user_lng = address.lng;
+            //order.date = DateTime.Now; ;
+            order.market_rate = market.rate;
+
+            await myDbContext.SaveChangesAsync();
+            carts.ForEach(c => { c.order_id = order.Id; });
+            User user = await myDbContext.AspNetUsers.Where(x => x.Id == order.user_id).FirstAsync();
+            await myDbContext.SaveChangesAsync();
+            await Functions.slt.SendNotificationAsync(new List<string>() { market.user_id }, "مطبخ ٢٤ | Matbakh24", "لديكم طلب جديد الرجاء التأكيد والبدء في تجهيز الطلب", myDbContext);
+            return Ok(order);
+        }
 
 
         [Authorize]
@@ -79,7 +103,7 @@ namespace Donia.Controllers
             {
                 market = orderMarket
         };
-            Address address = await myDbContext.addresses.Where(x => x.Id == orderRow.address_id).FirstAsync();
+            //Address address = await myDbContext.addresses.Where(x => x.Id == orderRow.address_id).FirstAsync();
             List<CartListResponse> cartsResponse = new List<CartListResponse>();
 
             double dtotal = 0.0;
@@ -103,7 +127,7 @@ namespace Donia.Controllers
                 };
                 cartsResponse.Add(cartListResponse);
                 if (ddelivery == 0.0)
-                    ddelivery = distanceInMiles(address.lng, address.lat, food.lng, food.lat) * 0.62 * 2;
+                    ddelivery = distanceInMiles(orderRow.user_lng, orderRow.user_lat, food.lng, food.lat) * 0.62 * 2;
                 dtotal += (cart.quantity * food.price);
             }
 
@@ -111,10 +135,10 @@ namespace Donia.Controllers
             dtotal = dtotal + ddelivery;
             dtax = 0.15 * dtotal;
             //dtotal = dtotal + dtax;
-            var subtotal = dsubtotal.ToString("#.##");
-            var total = dtotal.ToString("#.##");
-            var tax = dtax.ToString("#.##");
-            var delivery = ddelivery;
+            var subtotal = Math.Round(dsubtotal, 2);
+            var total = Math.Round(dtotal, 2);
+            var tax = Math.Round(dtax, 2);
+            var delivery = Math.Round(ddelivery, 2);
 
             var order = new  {
                 order =orderRow,
@@ -139,6 +163,22 @@ namespace Donia.Controllers
         public async Task<ActionResult> getDriverUpcommingOrders([FromForm] int id)
         {
             var orders =await myDbContext.driverOrders.Where(x => x.driver_id == id).Select(o => new { order = myDbContext.orders.Where(x => x.Id == o.order_id).First() }).ToListAsync();
+            var prevOrders = await myDbContext.orders.Where(x => x.delivery_id == id).ToListAsync();
+
+            //foreach (var order in prevOrders)
+            //{
+            //    orders.Add(new
+            //    {
+            //        order = order
+            //    });
+            //}
+            return Ok(orders);
+        }
+
+        [HttpPost("order/driver/get-prevous-orders")]
+        public async Task<ActionResult> getDriverPrvOrders([FromForm] int id)
+        {
+            var orders = await myDbContext.orders.Where(x => x.delivery_id == id).OrderByDescending(x=>x.Id).ToListAsync();
             return Ok(orders);
         }
 
@@ -167,7 +207,7 @@ namespace Donia.Controllers
             myDbContext.SaveChanges();
             var myLat = address.lat;
             var myLon = address.lng;
-            var radiusInMile = 20000;
+            var radiusInMile = 50;
 
             var drivers = myDbContext.drivers
                     .AsEnumerable()

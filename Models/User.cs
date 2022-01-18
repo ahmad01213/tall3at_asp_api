@@ -18,17 +18,23 @@ namespace Donia.Models
         public string BanarImage { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public string ProfileImage { get; set; }
+
         public string FullName { get; set; }
         public string Statuse { get; set; }
         public string DeviceToken { get; set; }
         public string bank { get; set; }
         public string code { get; set; }
         public string Role { get; set; }
-        public string IbanNumber { get; set; }
         public double balance { get; set; }
-        public string IdentityNumber { get; set; }
-  
+
+
+        public string identityNumber { get; set; }
+        public string IbanNumber { get; set; }
+        public string ProfileImage { get; set; }
+        public string carImage { get; set; }
+        public string identityImage { get; set; }
+
+
         public User() {
             GoogleId = null;
             FacebookId = null;
